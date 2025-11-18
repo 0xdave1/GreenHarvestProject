@@ -1,193 +1,151 @@
-# GreenHarvest
+# 🌿 GreenHarvest
 
-**GreenHarvest** is a full-stack web application developed during a hackathon to bridge the gap between farmers and consumers. It enables farmers to showcase their produce, connect with buyers, and build trust — all in one platform.
+GreenHarvest is a full-stack agri-tech web application built as my Capstone Project at **PLP Academy**. It connects farmers directly with consumers, enabling them to showcase produce, communicate seamlessly, and build trust in a transparent digital marketplace.
 
-🚀 **Winner of the Full Stack Web Development Hackathon** at the University of South Asia — built by Team Terminator 🏆
-
----
-
-## 💡 Challenge (Given Scenario)
-
-**Build a full-stack web application that connects farmers and consumers.**
-
-We responded with **GreenHarvest** — a modern, scalable agri-tech solution empowering both farmers and consumers.
+👨‍💻 **Capstone Project Developer:** David Joseph
 
 ---
 
-## ❗ The Problem (That Needs to Be Solved)
+## 💡 Project Brief
 
-Farmers in many regions face major hurdles:
+**Goal:** Build a full-stack web application that connects farmers and consumers.
 
-- ❌ Limited or no digital presence
-- ❌ Dependence on middlemen who reduce their profit margins
-- ❌ Lack of direct connection and trust with consumers
-- ❌ No centralized online platform to market their goods
+I developed GreenHarvest — a scalable and modern agricultural marketplace designed to empower farmers and give consumers an easy way to buy fresh produce directly from the source.
 
 ---
 
-## ✅ Our Developed Solution
+## ❗ The Problem
 
-**GreenHarvest** directly addresses these issues by offering:
+Farmers often face:
 
-- 🌾 **Farmer Profiles** — Showcase farm products, locations, and background
-- 🛒 **Consumer Dashboard** — Browse goods by category, farm
-- 📬 **Messaging System** — Enables real-time communication between farmers and consumers
-- 📦 **Order Requests** — Simple, secure order placement
-- ⚙️ **Admin Panel** — Manage users, listings, categories
-- 📈 **Trust Building** — Transparent and localized digital marketplace
+- ❌ No digital platform to promote their products  
+- ❌ Heavy dependence on middlemen  
+- ❌ Limited access to consumers  
+- ❌ Lack of trust-building infrastructure  
 
 ---
 
-## Technologies Used
+## ✅ The Solution — GreenHarvest
 
-- **Frontend:** React JS, Tailwind CSS, React Redux
-- **Backend:** Node JS, Express JS
-- **Database:** MongoDB
-- **Security:** JWT (JSON Web Token)
-- **Hosting:** Vercel
+GreenHarvest addresses these challenges through:
+
+- 🌾 **Farmer Profiles** — Farm details, locations, and product listings  
+- 🛒 **Consumer Dashboard** — Discover produce by farm or category  
+- 💬 **Messaging System** — Direct farmer-to-consumer communication  
+- 📦 **Order Requests** — Simple, secure order placement  
+- 🛠️ **Admin Panel** — User, product, and category management  
+- 🔐 **Role-Based Authentication** — Farmer, Consumer & Admin  
+
+---
+
+## 🧰 Technologies Used
+
+- **Frontend:** React JS, Tailwind CSS, Redux  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JWT  
+- **Hosting:** Vercel  
 
 ---
 
 ## 🧩 Features Overview
 
-| Role       | Features                                                                          |
-|------------|-----------------------------------------------------------------------------------|
-| 👨‍🌾 Farmer  | Register, login, create profile, list products, manage products, view & reply to messages  |
-| 🛒 Consumer | Browse listings, search by category, message farmers, request orders               |
-| 🛠️ Admin   | Manage users, products, order requests, and categories via dashboard              |
-| 🔐 Auth    | Role-based access control                                                         |
+| Role        | Features                                                                 |
+|-------------|--------------------------------------------------------------------------|
+| 👨‍🌾 Farmer   | Register, login, manage profile/products, view & reply to messages       |
+| 🛒 Consumer | Browse products, search by category, message farmers, send order requests |
+| 🛠️ Admin    | Manage users, listings, categories, and order activities                 |
+| 🔐 Auth     | Secure and role-based access control                                     |
 
 ---
 
-## Getting Started
+## 📁 Project Structure
+
+### Frontend (`client/`)
+client/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+└── index.html
+
+### Backend (`api/`)
+api/
+├── controllers/
+├── db/
+├── models/
+├── routes/
+├── utils/
+├── .env
+└── index.js
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js and npm installed
-- VS Code or any other code editor
-- Git (optional, for cloning the repository)
+- Node.js  
+- npm  
+- MongoDB connection string  
+- Code editor (VS Code recommended)  
 
-### File Structures
+### 1. Clone or Download Project
 
-```plaintext
-client/
-├── public/
-│   └── logo.png                       # Logo file
-├── src/
-│   ├── assets/                        # Images and other assets
-│   ├── components/                    # Reusable UI components
-│   ├── pages/                         # Pages
-│   ├── redux/                         # State management
-│   ├── App.jsx                        # React Router setup
-│   └── main.jsx                       # Application entry point
-├── .env                               # Environment variables
-└── index.html                         # Root HTML file
-```
+```bash
+git clone https://github.com/yourusername/GreenHarvest.git
 
-```plaintext
-api/
-├── controllers/                       # Core logic
-├── db/                                # Database connection
-├── models/                            # Data schemas
-├── routes/                            # API routes
-├── utils/                             # Helper functions
-├── .env                               # Environment variables
-└── index.js                           # Main server file
-```
+🛠️ Getting Started
+Prerequisites
 
-### Setup Instructions
+Node.js
 
-1. **Clone the Repository**
+npm
 
-   ```bash
-   git clone https://github.com/yourusername/GreenHarvest.git
-   ```
+MongoDB connection string
 
-   `Unzip the File`
+VS Code or any editor
 
-2. **Open with VS Code**
+🟢 Running the Frontend
+cd client
+npm install
 
-   Open the project directory with VS Code or your preferred code editor.
 
-3. **Install Dependencies**
+Create a .env file:
 
-    **Frontend:**
+VITE_BACKEND_URL=http://localhost:5000
 
-    - Navigate to the frontend directory:
 
-    ```bash
-    cd client
-    ```
+Start frontend:
 
-    - Create a `.env` file in the backend directory and add the following environment variables:
+npm run dev
 
-    ```env
-    VITE_BACKEND_URL = your_backend_url (http://localhost:5000)
-    ```
+🔵 Running the Backend
+cd api
+npm install
 
-    - Install the dependencies:
 
-    ```bash
-    npm install
-    ```
+Create .env:
 
-    - Run the development server:
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+JWT_EXPIRE=90d
 
-    ```bash
-    npm run dev
-    ```
 
-    **Backend:**
+Start backend:
 
-    - Navigate to the backend directory:
+npm run dev
 
-    ```bash
-    cd api
-    ```
+🌐 Live Demo & Repo
 
-    - Create a `.env` file in the backend directory and add the following environment variables:
+Add your links here once deployed:
 
-    ```env
-    PORT=5000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key
-    JWT_EXPIRE =your_jwt_expiry (90d)
-    ```
+Live Frontend:
 
-    - Install the dependencies:
-
-    ```bash
-    npm install
-    ```
-
-    - Start the server:
-
-    ```bash
-    npm run dev
-    ```
-
-4. **Update API URLs**
-
-    Ensure that the API URLs in your frontend code are correctly pointing to your local backend server. Update the `VITE_BACKEND_URL` in the `.env` file (as mentioned in the previous step).
-
-5. **Access the Application**
-
-    After everything is set up:
-    - Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to view the application.
-    - Ensure the frontend loads correctly and communicates with the backend server.
-
----
-
-## Live Links
-
-- **Live Web:** [GreenHarvest.vercel.app](https://GreenHarvest.vercel.app)
-- **GitHub Repo:** [github.com/ahadalireach/GreenHarvest](https://github.com/ahadalireach/GreenHarvest) (Give it a Star!)
-- Live Video Demo: [Watch Now](https://www.youtube.com/watch?v=riaSSccA8uk)
-
-## Contact
-
-For any questions, feedback, or collaboration opportunities, feel free to contact me at [ahadali.reach@gmail.com](mailto:ahadali.reach@gmail.com).
-
----
-
-> Built with ❤️ by Team Terminator | **Full Stack Web Development Hackathon** Winner at the University of South Asia 🏆
+GitHub Repository:

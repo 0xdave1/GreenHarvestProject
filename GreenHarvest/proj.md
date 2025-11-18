@@ -146,6 +146,5 @@ npm run dev
 
 Add your links here once deployed:
 
-Live Frontend:
+Live Frontend: https://0xdave1.github.io/GreenHarvestProject/
 
-GitHub Repository:
